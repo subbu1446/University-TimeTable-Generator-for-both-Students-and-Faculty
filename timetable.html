@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>University Timetable</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./timetable.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body class="bdybackground device">
+  <h1 class="title"><img src="D:\AMRITA\Semesters\semester-6\open lab\800-900.gif" height="50px" style="margin: 2px">&nbsp;Time Table Allocation<span id='currentDate'></span><div id="MyClockDisplay" class="clock" onload="showTime()"></div></h1>
+  <form id="timetableForm">
+    <div class="slots container">
+      <div class="inputs">
+       <span style="margin:25px"> 
+      <label for="totalSlots">Total Slots per day:</label>
+      <input type="number" id="totalSlots" min="0"  required>
+    </span>
+    <span style="margin:25px">
+      <label for="workingDays">Working days:</label>
+      <input type="number" id="workingDays" min="0" required>
+    </span>
+     </div>
+
+      <div class="inputs">
+      <span style="margin:25px">
+      <label for="sections">No. of Sections:</label>
+      <input type="number" id="sections" min="0" required>
+      </span>
+      <span style="margin:25px">
+      <label for="instructors">No. of Instructors:</label>
+      <input type="number" id="instructors" min="0" required>
+    </span>
+       </div>
+     </div>
+     
+    
+    
+    <hr>
+
+   <div class="grid-container">
+  <div class="left-column" id="timingFields">
+    <!-- Timing input fields will be appended here -->
+  </div>
+
+  <div class="center-column" id="sectionsFields">
+    <!-- Sections input fields will be appended here -->
+  </div>
+
+  <div class="right-column" id="instructorsFields">
+    <!-- Instructors input fields will be appended here -->
+  </div>
+  <div class="center-column" id="instructorsFields">
+  <!-- Instructors input fields will be appended here -->
+</div>
+
+<div class="right-column" id="coursesFields1">
+  <!-- Courses input fields for instructor 1 will be appended here -->
+</div>
+
+<div class="right-column" id="coursesFields2">
+  <!-- Courses input fields for instructor 2 will be appended here -->
+</div>
+</div>
+
+
+
+    <!-- Add more form fields for collecting input -->
+   
+  </form>
+
+ <div class="submit-container" >
+    <button type="submit" id="generateTimetable">Generate Timetable</button></div>
+<!-- Add this section to your HTML -->
+
+   <script type="text/javascript" src="./timetable.js"></script>
+</body>
+</html>

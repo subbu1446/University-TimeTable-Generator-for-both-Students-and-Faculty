@@ -1,0 +1,76 @@
+#currentDate{
+	float: right;
+	font-size: 20px;
+}
+.clock {
+    position: relative;
+     text-align: right;
+    color: white;
+    font-size: 20px;
+    font-family: arial;
+    letter-spacing: 4px;
+
+}
+.device{
+	
+}
+.title{
+	background-color:#1CC09E;
+	text-align: center;
+	color: white;
+}
+.bdybackground{
+	background-color: floralwhite;
+}
+.slots{
+	font-size: 30px;
+}
+.inputs{
+    width 
+}
+
+.container{
+	display: grid;
+  gap: 20px;
+  margin: 20px;
+}
+input{
+	text-align: center;
+}
+.submit-container{
+	display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+  button{
+     background-color :orange ;
+      color: white; 
+      height: 50px; 
+      justify-self: center; 
+      display: flex;
+      align-items: center;
+      margin: 50px;
+ }
+ button:hover{
+ 	background-color: green;
+ }
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.9fr 2fr 7fr;
+  gap: 20px;
+}
+
+.left-column {
+  justify-self: 0%;
+}
+
+.center-column {
+  justify-self: 0%;
+}
+
+.right-column {
+  justify-self: 0%;
+}
+
+
+
